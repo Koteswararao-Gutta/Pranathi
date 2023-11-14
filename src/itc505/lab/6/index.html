@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6 - Holy Grail Layout</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header>    
+    <h1 class="title">Online Market</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+	    <li><a href="#"><u>Menu</u></a></li>
+        <li><a href="#">Vegetables</a></li>
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Groceries</a></li>
+      </ul>
+    </nav>
+
+    <main id="content">
+     
+       <div>
+    <h2>Online Store</h2>
+    <button onclick="addItem('Carrots', 19.99)">Carrots</button>
+    <button onclick="addItem('Apples', 29.99)">Apples</button>
+    <button onclick="addItem('Sugar', 9.99)">Sugar</button>
+	<button onclick="addItem('Flour', 15.99)">Flour</button>
+	<button onclick="addItem('Potato', 10.99)">Potato</button>
+	<button onclick="addItem('Bananas', 12.99)">Bananas</button>
+	<button onclick="addItem('Onions', 8.99)">Onions</button>
+	<button onclick="addItem('Tomato', 7.99)">Tomato</button>
+	<button onclick="addItem('Oil', 13.99)">Oil</button>
+  </div>
+
+  <div id="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="totalAmount">0.00</span></p>
+  </div>
+
+      
+    </main>
+
+    <aside id="advertisement">
+      <a href="https://www.bigbasket.com/pd/10000070/fresho-carrot-orange-1-kg/?nc=smart_basket&nc=My+Smart+Basket&t_pg=%252Foct-homepage-t1%252F&t_p=Oct-T1_2023&t_pos_sec=3&t_ch=desktop&t_pos_item=3&t_s=Carrot+-+Orange+%2528Loose%2529/" target="_blank">
+        <img src="https://www.bigbasket.com/media/uploads/p/m/10000070_15-fresho-carrot-orange.jpg?tr=w-1920,q=80" alt="Advertisement"height="200"width="300">
+      </a>
+    </aside>
+  </div>
+
+
+
+	 <footer>
+    <div class="addendum">
+      <h2>Addendum</h2>
+      <p>
+        The JavaScript code addresses the challenge of implementing a dynamic shopping cart feature.
+        It solves the problem by creating a function, `addItem`, that allows users to add items to the cart with real-time updates.
+      </p>
+      <h3>Overview</h3>
+      <p>
+        The `addItem` function dynamically generates list items for added products, updating the total amount and cart display instantly.
+        Challenges encountered included ensuring real-time updates and accurate total calculations, both resolved through JavaScript DOM manipulation.
+      </p>
+      <h3>Challenges and Solutions</h3>
+      <ul>
+        <li>
+          <strong>Real-time Updates:</strong> Ensured instant cart updates without page refresh.
+        </li>
+        <li>
+          <strong>Total Calculation:</strong> Implemented accurate total amount calculation for a seamless user experience.
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

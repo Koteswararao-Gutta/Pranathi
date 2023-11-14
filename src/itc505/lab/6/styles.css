@@ -1,0 +1,138 @@
+/* Reset and general styling for the body */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 130vh;
+  margin: 0;
+}
+
+/* Container styles */
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr; /* Split into three equal columns */
+  gap: 20px;
+}
+
+/* Header styles */
+header {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtRquxoiWDvOw8ObySi5DAtjVvq5i-jGglYhBZc8dEpyeP5R6HRZ0kbR5JxPfEuTUea0&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  color: yellow; /* Set text color to contrast with the background */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #00FF00;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color:red;
+}
+
+/* Main content styles */
+main,
+aside {
+  padding: 20px;
+  background-color: #00FF00;
+}
+
+/* General styles for a container with a background color, padding, border-radius, and shadow */
+.div {
+  background-color: red;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for h2 within .div */
+.div h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Styles for ul#div-list */
+ul#div-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles for li within ul#div-list */
+ul#div-list li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* Styles for .div-form */
+.div-form {
+  background-color: #00FF00;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Styles for h2 within .div-form */
+.div-form h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Styles for #div-form textarea */
+#div-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Styles for #div-form button */
+#div-form button {
+  background-color: #4caf50;
+  color: red;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for #div-form button */
+#div-form button:hover {
+  background-color:red;
+}
+
+/* Footer styles */
+footer {
+  background-color:yellow;
+  padding: 10px;
+}
