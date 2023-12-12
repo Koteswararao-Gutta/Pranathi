@@ -41,6 +41,34 @@
     - Explored methods to optimize code for improved performance.<br>
   </p>
 
+ <h1>Understanding Game Functions</h1>
+
+    <h2>startTimer</h2>
+    <p>Sets up a game timer using setInterval. It calls updateTimer every second to track game time.</p>
+
+    <h2>updateTimer</h2>
+    <p>Tracks time, increments seconds, and updates minutes after every 60 seconds. Displays time on the webpage.</p>
+
+    <h2>stopTimer</h2>
+    <p>Halts the game's timer by clearing the interval set by startTimer, stopping time count.</p>
+
+    <h2>toggleSquare</h2>
+    <p>Manages square states on the board. Toggles squares' state upon click and affects adjacent squares.</p>
+
+    <h2>checkGameState</h2>
+    <p>Checks if the player has won (all squares off) or lost (exceeded max moves). Determines game outcome.</p>
+
+    <h2>displayWin</h2>
+    <p>Called when the player wins. It displays a success alert and stops the game timer.</p>
+
+    <h2>displayLoss</h2>
+    <p>Invoked when player exceeds allowed moves. It shows a loss alert and stops the timer.</p>
+
+    <h2>newGame</h2>
+    <p>Resets the game to its initial state. Clears move count, resets board, and restarts the timer.</p>
+
+    <h2>resetBoard</h2>
+    <p>Randomizes the on/off state of each square for a unique game experience at the start.</p>
 
   <a href="index.html">Back to Game</a> <!-- Link to go back to the game -->
 </body>
